@@ -1,10 +1,12 @@
-export default function DashboardLayout(
-    {children} : {
-        children: React.ReactNode
-        users: React.ReactNode
-        revenue: React.ReactNode
-        notifications: React.ReactNode
-    }) {
+
+type Props = {
+    children: React.ReactNode
+    users: React.ReactNode
+    revenue: React.ReactNode
+    notifications: React.ReactNode
+}
+
+export default function DashboardLayout({children, users, revenue, notifications} : Props) {
     return (
         <div>
             {children}
